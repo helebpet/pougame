@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: black;
+    height: 100%;
+    overflow: hidden; 
+    font-family: 'Comic Neue', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10%;
+    border: #ff838300 solid 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    height: 100vh;   
+}
+
+h1 {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 900; 
+    -webkit-text-stroke: 3px black;
+}
+
+.index {
+    background: url('../img/blink.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.age_6 {
+    background-color: #FF8383;
+}
+
+.age_20 {
+    background-color: #A1D6CB;
+}
+
+.age_40 {
+    background: url('../img/wall1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.game_option {
+    background: url('../img/screen.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.mini_games {
+    background: url('../img/screen.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.food_drop {
+    background: url('../img/picnic.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.tic_tac_pou {
+    background: url('../img/grid.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+
+
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+}
+
+img{
+    padding: 20px;
+}
+
+.left-arrow:hover {
+    content: url('../img/lefthower.png');
+}
+
+.right-arrow:hover {
+    content: url('../img/righthower.png');
+}
+
+.lamp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.skyfall {
+    background: url('../img/skyfall.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.pou {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+.games {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 25px;
+}
+
+.minipou {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+.minipou:hover {
+    content: url('../img/hi.png');
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds space between items */
+
+    position: absolute; /* Positions the container */
+    top: 50%; /* Moves it to the middle vertically */
+    left: 50%; /* Moves it to the middle horizontally */
+    transform: translate(-50%, -50%); /* Ensures perfect centering */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+
+
+.game-container a {
+    text-align: center; /* Centers text below images */
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Keeps text color consistent */
+    font-size: 30px; /* Adjust as needed */
+    -webkit-text-stroke: 2px rgb(255, 255, 255); /* Black stroke around text */
+    font-weight: bold;
+
+}
+
