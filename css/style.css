@@ -134,22 +134,16 @@ img{
     align-items: center; /* Centers items vertically */
     gap: 20px; /* Adds space between items */
 
-    position: absolute; /* Positions the container */
-    top: 50%; /* Moves it to the middle vertically */
-    left: 50%; /* Moves it to the middle horizontally */
-    transform: translate(-50%, -50%); /* Ensures perfect centering */
-    width: 100%; /* Ensures it spans the full width */
+    position: absolute; 
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100vw; 
 }
 
 
-
 .game-container a {
-    text-align: center; /* Centers text below images */
-    text-decoration: none; /* Removes underline from links */
-    color: black; /* Keeps text color consistent */
-    font-size: 30px; /* Adjust as needed */
-    -webkit-text-stroke: 2px rgb(255, 255, 255); /* Black stroke around text */
-    font-weight: bold;
+    text-align: center; 
 }
 
 .game {
