@@ -190,5 +190,128 @@ img{
     height: auto;  /* Maintain aspect ratio */
 }
 
+/* Blueminimini_pou images */
+.b1 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 10%;
+    left: 5%;
+}
+
+.b2 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 25%;
+    left: 40%;
+}
+
+.b3 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 50%;
+    left: 60%;
+}
+
+.b4 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 70%;
+    left: 20%;
+}
+
+.b5 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+}
+
+
+.r1 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 15%;
+    left: 60%;
+}
+
+.r2 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 30%;
+    left: 20%;
+}
+
+.r3 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 55%;
+    left: 70%;
+}
+
+.r4 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 65%;
+    left: 10%;
+}
+
+.r5 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 62%;
+    left: 30%;
+}
+
+
+.g1 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 5%;
+    left: 75%;
+}
+
+.g2 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 20%;
+    left: 15%;
+}
+
+.g3 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+}
+
+.g4 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 60%;
+    left: 85%;
+}
+
+.g5 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 30%;
+    left: 5%;
+}
+
 
 
