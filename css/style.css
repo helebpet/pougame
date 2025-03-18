@@ -130,9 +130,9 @@ img{
 
 .game-container {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    gap: 20px; /* Adds space between items */
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
 
     position: absolute; 
     top: 55%; 
