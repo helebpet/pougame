@@ -150,6 +150,9 @@ img{
     font-size: 30px; /* Adjust as needed */
     -webkit-text-stroke: 2px rgb(255, 255, 255); /* Black stroke around text */
     font-weight: bold;
+}
 
+.game {
+    text-align: center;
 }
 
