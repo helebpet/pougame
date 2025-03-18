@@ -35,7 +35,8 @@ h1 {
 }
 
 .age_20 {
-    background-color: #A1D6CB;
+    background: url('../img/g.gif') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .age_40 {
@@ -129,18 +130,18 @@ img{
 }
 
 .game-container {
+    background-color: aqua;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    gap: 10px; 
+    margin: auto;
 
-    position: absolute; 
+    /*position: absolute; 
     top: 55%; 
     left: 50%; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); */
     width: 100vw; 
 }
-
 
 .game-container a {
     text-align: center; 
@@ -152,45 +153,45 @@ img{
 
 .brocoli {
     position: absolute;
-    top: 20%;      /* 10% from the top */
-    left: 5%;      /* 5% from the left */
-    width: 10%;    /* Width set to 10% of the screen width */
-    height: auto;  /* Maintain aspect ratio */
+    top: 20%;      
+    left: 5%;      
+    width: 10%;    
+    height: auto;  
 }
 
 .cupcake {
     position: absolute;
-    top: 10%;      /* 10% from the top */
-    left: 25%;     /* 25% from the left */
-    width: 10%;    /* Width set to 10% of the screen width */
-    height: auto;  /* Maintain aspect ratio */
+    top: 10%;      
+    left: 25%;     
+    width: 10%;    
+    height: auto;  
 }
 
 .roll {
     position: absolute;
-    top: 30%;      /* 10% from the top */
-    left: 45%;     /* 45% from the left */
-    width: 10%;    /* Width set to 10% of the screen width */
-    height: auto;  /* Maintain aspect ratio */
+    top: 30%;      
+    left: 45%;     
+    width: 10%;    
+    height: auto;  
 }
 
 .tomato {
     position: absolute;
-    top: 15%;      /* 10% from the top */
-    left: 65%;     /* 65% from the left */
-    width: 10%;    /* Width set to 10% of the screen width */
-    height: auto;  /* Maintain aspect ratio */
+    top: 15%;      
+    left: 65%;     
+    width: 10%;   
+    height: auto;  
 }
 
 .grapes {
     position: absolute;
-    top: 18%;      /* 10% from the top */
-    left: 85%;     /* 85% from the left */
-    width: 10%;    /* Width set to 10% of the screen width */
-    height: auto;  /* Maintain aspect ratio */
+    top: 18%;      
+    left: 85%;    
+    width: 10%;    
+    height: auto;  
 }
 
-/* Blueminimini_pou images */
+
 .b1 {
     position: absolute;
     width: 200px;
