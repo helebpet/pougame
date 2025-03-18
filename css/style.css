@@ -150,3 +150,45 @@ img{
     text-align: center;
 }
 
+.brocoli {
+    position: absolute;
+    top: 20%;      /* 10% from the top */
+    left: 5%;      /* 5% from the left */
+    width: 10%;    /* Width set to 10% of the screen width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.cupcake {
+    position: absolute;
+    top: 10%;      /* 10% from the top */
+    left: 25%;     /* 25% from the left */
+    width: 10%;    /* Width set to 10% of the screen width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.roll {
+    position: absolute;
+    top: 30%;      /* 10% from the top */
+    left: 45%;     /* 45% from the left */
+    width: 10%;    /* Width set to 10% of the screen width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.tomato {
+    position: absolute;
+    top: 15%;      /* 10% from the top */
+    left: 65%;     /* 65% from the left */
+    width: 10%;    /* Width set to 10% of the screen width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.grapes {
+    position: absolute;
+    top: 18%;      /* 10% from the top */
+    left: 85%;     /* 85% from the left */
+    width: 10%;    /* Width set to 10% of the screen width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+
+
