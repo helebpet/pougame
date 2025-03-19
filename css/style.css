@@ -129,68 +129,25 @@ img{
     visibility: hidden;
 }
 
+
 .game-container {
-    background-color: aqua;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    margin: auto;
-
-    /*position: absolute; 
-    top: 55%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); */
-    width: 100vw; 
-}
-
-.game-container a {
-    text-align: center; 
+    gap: 1%; 
+    flex-wrap: wrap; 
 }
 
 .game {
     text-align: center;
+    flex: 1; /* Distribute space evenly */
+    min-width: 250px; /* Prevent items from shrinking too much */
 }
 
-.brocoli {
-    position: absolute;
-    top: 20%;      
-    left: 5%;      
-    width: 10%;    
-    height: auto;  
+.game-container {
+    margin: auto;
+    width: 100vw; 
 }
-
-.cupcake {
-    position: absolute;
-    top: 10%;      
-    left: 25%;     
-    width: 10%;    
-    height: auto;  
-}
-
-.roll {
-    position: absolute;
-    top: 30%;      
-    left: 45%;     
-    width: 10%;    
-    height: auto;  
-}
-
-.tomato {
-    position: absolute;
-    top: 15%;      
-    left: 65%;     
-    width: 10%;   
-    height: auto;  
-}
-
-.grapes {
-    position: absolute;
-    top: 18%;      
-    left: 85%;    
-    width: 10%;    
-    height: auto;  
-}
-
 
 .b1 {
     position: absolute;
@@ -314,5 +271,78 @@ img{
     left: 5%;
 }
 
+/* animation*/
+.music-container {
+    position: relative;
+    width: 100px;
+    height: 200px;
+}
+
+.music-container .note {  /* More specific */
+    position: absolute;
+    width: 30px;
+    opacity: 0;
+    animation: floatNotes 3s infinite ease-in-out;
+}
+
+.note1 { left: 10px; animation-delay: 0s; }
+.note2 { left: 30px; animation-delay: 5s; }
+.note3 { left: 50px; animation-delay: 1s; }
+.note4 { left: 70px; animation-delay: 4s; }
+
+@keyframes floatNotes {
+    0% { transform: translateY(0) scale(1); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(-100px) scale(1.2); opacity: 0; }
+}
+
+
+#brocoli {
+    position: absolute;
+    top: 20%;      
+    left: 5%;      
+    width: 10%;    
+    height: auto; 
+}
+  
+#cupcake {
+    position: absolute;
+    top: 10%;      
+    left: 25%;     
+    width: 10%;    
+    height: auto;  
+}
+
+#roll {
+    position: absolute;
+    top: 30%;      
+    left: 45%;     
+    width: 10%;    
+    height: auto;  
+}
+
+#tomato {
+    position: absolute;
+    top: 15%;      
+    left: 65%;     
+    width: 10%;   
+    height: auto;   
+}
+
+#grapes {
+    position: absolute;
+    top: 18%;      
+    left: 85%;    
+    width: 10%;    
+    height: auto;   
+}
+
+#blue1 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 10%;
+    left: 5%;   
+}
 
 
