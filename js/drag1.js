@@ -1,5 +1,14 @@
 //Make the DIV element draggagle:
-dragElement(document.getElementById("blue1"));
+dragElement(document.getElementById("b1"));
+dragElement(document.getElementById("b2"));
+dragElement(document.getElementById("b3"));
+dragElement(document.getElementById("b4"));
+dragElement(document.getElementById("b5"));
+dragElement(document.getElementById("r1"));
+dragElement(document.getElementById("r2"));
+dragElement(document.getElementById("r3"));
+dragElement(document.getElementById("r4"));
+dragElement(document.getElementById("r5"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -10,6 +19,8 @@ function dragElement(elmnt) {
     /* otherwise, move the DIV from anywhere inside the DIV:*/
     elmnt.onmousedown = dragMouseDown;
   }
+
+
 
   function dragMouseDown(e) {
     e = e || window.event;
