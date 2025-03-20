@@ -89,10 +89,9 @@ img{
 }
 
 .lamp {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
 }
 
 .skyfall {
