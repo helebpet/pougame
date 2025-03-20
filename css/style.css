@@ -124,9 +124,23 @@ img{
     padding: 0px;
 }
 
+.miniminipou {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
 .minipou:hover {
+    content: url('../img/sing.gif');
+}
+
+.miniminipou:hover {
     content: url('../img/hi.png');
 }
+
+
+
 
 .hidden {
     visibility: hidden;
