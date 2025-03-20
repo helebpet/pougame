@@ -90,8 +90,12 @@ img{
 
 .lamp {
     position: absolute;
-    bottom: -5%;
-    right: -5%;
+    bottom: -27%;
+    right: -13%;
+}
+
+.lamp:hover {
+    content: url('../img/lamphover.png');
 }
 
 .skyfall {
