@@ -355,4 +355,21 @@ img{
 }
 
 
+/* For tablets and smaller devices */
+@media (max-width: 1024px) { 
+    .lamp {
+        width: 300px; /* Adjust size for tablets */
+        height: auto;
+    }
+}
+
+/* For phones (including iPhone SE) */
+@media (max-width: 600px) { 
+    .lamp {
+        width: 200px; /* Smaller size for phones */
+        height: auto;
+    }
+}
+
+
 
