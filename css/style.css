@@ -349,6 +349,25 @@
            bottom: -2.5%;
            right: -5%;
        }
+
+
+    }
+    .nav-container a img {
+        width: 15vw;
+    }
+    
+    /* Game Container: Adjust width */
+    .game-container {
+        width: 90vw;
+    }
+    
+    /* Individual Game: Scale down if needed */
+    .game {
+        min-width: 250px;
+    }
+
+
    }
    
+
    
