@@ -415,9 +415,37 @@
 .food_drop #roll img,
 .food_drop #tomato img,
 .food_drop #grapes img {
-    width: 100px !important; /* Adjust size as needed */
+    width: 60px !important; /* Adjust size as needed */
     height: auto;
 }
+
+#grapes { 
+    position: absolute;
+    top: 49%; 
+    left: 50%; 
+}
+
+/* Adjusting size of basket and other elements */
+#b1, #b2, #b3, #b4, #b5,
+#r1, #r2, #r3, #r4, #r5 {
+    position: absolute;
+    width: 60px !important;  /* Use !important if needed */
+    height: auto !important;
+    z-index: 10;  /* Optional: Ensure the elements are above other content */
+}
+
+/* Make sure to position them as intended */
+#b1 { top: 10%; left: 5%; }
+#b2 { top: 25%; left: 40%; }
+#b3 { top: 50%; left: 60%; }
+#b4 { top: 70%; left: 20%; }
+#b5 { top: 50%; left: 50%; }
+#r1 { top: 15%; left: 60%; }
+#r2 { top: 30%; left: 20%; }
+#r3 { top: 55%; left: 70%; }
+#r4 { top: 65%; left: 10%; }
+#r5 { top: 62%; left: 30%; }
+
 
 
    
