@@ -351,18 +351,26 @@
         padding: 0px;
     }
     
+    .game-container {
+        position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+
     .game-container img:nth-child(2) {
         width: auto; 
         height: 30px; /* Reduce height of second image */
         padding: 0px;
     }
-    
-    .mini_games_text{
-           height: 40px;
-           width: auto;
-    }
-    
 
+    .mini_games_text {
+        height: 32px !important;
+        width: auto !important;
+    }
+
+    
        /* Lamp specific adjustments */
        .lamp {
            width: 50%;
@@ -372,14 +380,13 @@
            right: -5%;
        }
 
-    
     /* Individual Game: Scale down if needed */
     .games {
         width: 30%;
         position: absolute;
         bottom: 0%;
         right: -5%;
-
+        z-index: 5;
     }
 
    
