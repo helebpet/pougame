@@ -4,6 +4,13 @@
    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
+   html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
    /* ==========================================================================
       2. Global Styles & Layout
       ========================================================================== */
@@ -337,9 +344,24 @@
 
        }
        /* Game container width */
-       .game-container {
-           width: 80vw;
-       }
+  
+       .game-container img {
+        width: 150px; /* Reduce width */
+        height: auto; /* Maintain aspect ratio */
+        padding: 0px;
+    }
+    
+    .game-container img:nth-child(2) {
+        width: auto; 
+        height: 30px; /* Reduce height of second image */
+        padding: 0px;
+    }
+    
+    .mini_games_text{
+           height: 40px;
+           width: auto;
+    }
+    
 
        /* Lamp specific adjustments */
        .lamp {
@@ -350,20 +372,14 @@
            right: -5%;
        }
 
-
-       
-    .nav-container a img {
-        width: 15vw;
-    }
-    
-    /* Game Container: Adjust width */
-    .game-container {
-        width: 80vw;
-    }
     
     /* Individual Game: Scale down if needed */
-    .game {
-        min-width: 250px;
+    .games {
+        width: 30%;
+        position: absolute;
+        bottom: 0%;
+        right: -5%;
+
     }
 
    
