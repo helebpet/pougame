@@ -425,11 +425,11 @@
     left: 50%; 
 }
 
-/* Adjusting size of basket and other elements */
+/* Adjusting size of elemets fto tic tac pou */
 #b1, #b2, #b3, #b4, #b5,
 #r1, #r2, #r3, #r4, #r5 {
     position: absolute;
-    width: 60px !important;
+    width: 40px !important;
     height: auto !important;
 }
 

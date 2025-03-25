@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sound = document.getElementById("backgroundSound");
-  
-    // Try to play the sound (some browsers need user interaction first)
-    function playAudio() {
-        sound.play().catch(() => {
-            document.body.addEventListener("click", playAudio, { once: true });
-        });
-    }
-  
-    playAudio(); // Attempt to play immediately
-  });
+
+    // Ensure sound is muted first (Safari autoplay restriction workaround)
+    sound.muted = true;
+    sound.play().then(() => {
+        sound.muted = false; // Unmute after autoplay success
+    }).catch(() => {
+        document.body.addEventListener("click", () => {
+            sound.muted = false; 
+            sound.play();
+        }, { once: true });
+    });
+});
