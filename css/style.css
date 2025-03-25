@@ -87,7 +87,6 @@ img{
 .right-arrow:hover {
     content: url('../img/righthower.png');
 }
-
 .lamp {
     position: absolute;
     bottom: -10%;
@@ -354,20 +353,83 @@ img{
     left: 30%;
 }
 
+.pou-lamp-container {
+    display: flex;
+    align-items: center; /* Align Pou and Lamp vertically */
+    justify-content: center; /* Center both elements horizontally */
+    gap: 20px; /* Space between Pou and Lamp */
+    width: 100%; /* Full width to ensure flexibility */
+    position: absolute;
+    top: 60%; /* Adjust to position them correctly */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+/* Ensure images scale well */
+.miniminipou, .lamp {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pou-lamp-container {
+        gap: 10px; /* Reduce space on smaller screens */
+    }
+
+    .miniminipou, .lamp {
+        width: 80px; /* Adjust size as needed */
+    }
+}
+
+@media (max-width: 375px) {
+    .miniminipou, .lamp {
+        width: 60px; /* Smaller size for iPhone SE */
+    }
+}
 
 
 /* For phones (including iPhone SE) */
-@media (max-width: 600px) { 
+@media (max-width: 768px) { 
     .lamp {
         width: 50%; /* Smaller size for phones */
         height: auto;
         position: absolute;
-        bottom: 0%;
+        bottom: -2.5%;
         right: -5%;
     }
-   
 }
+
+@media (max-width: 768px) {
+    .nav-container {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing */
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; /* Ensures it only takes the necessary width */
+        
+        gap: 5px;
+        padding: 5px;
+        width: 90vw; /* Keep some margin on the sides */
+        max-width: 100%; /* Prevents overflow */
+        
+    }
+
+    .stop, .right-arrow, .left-arrow {
+        width: 30px; /* Reduce size on smaller screens */
+    }
+
+    .nav-container img[alt*="age"] {
+        height: 50px; /* Reduce the age image size */
+    }
+}
+
+
 
 
 
