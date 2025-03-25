@@ -389,6 +389,37 @@
         z-index: 5;
     }
 
+    /* Make Pou smaller only on the food_drop page */
+.food_drop .pou {
+    width: 60vw; /* Adjust as needed */
+    height: auto;
+}
+
+.food_drop {
+    background: url('../img/picnic1.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Prevents scrolling */
+}
+
+.tic_tac_pou{
+    background: url('../img/grid2.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Prevents scrolling */
+}
+
+
+
+/* Reduce the size of food items */
+.food_drop #brocoli img,
+.food_drop #cupcake img,
+.food_drop #roll img,
+.food_drop #tomato img,
+.food_drop #grapes img {
+    width: 100px !important; /* Adjust size as needed */
+    height: auto;
+}
+
+
    
 }
    
