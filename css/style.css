@@ -303,6 +303,15 @@
        .miniminipou, .lamp {
            width: 50vw;
        }
+       .minipou, .lamp {
+        width: 60vw;
+        }
+
+        .pou, .lamp {
+            width: 100vw;
+        }
+
+
        /* Navigation adjustments */
        .nav-container {
            display: flex;
@@ -321,15 +330,17 @@
            max-width: 100%;
        }
        .stop, .right-arrow, .left-arrow {
-           width: 20vw;
+           width: 15vw;
        }
        .nav-container img[alt*="age"] {
            height: 50px; /* Reduce the age image size */
+
        }
        /* Game container width */
        .game-container {
            width: 90vw;
        }
+
        /* Lamp specific adjustments */
        .lamp {
            width: 50%;
