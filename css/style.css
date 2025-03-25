@@ -431,7 +431,6 @@
     position: absolute;
     width: 60px !important;
     height: auto !important;
-    border: 2px solid red;  /* Temporary for debugging */
 }
 
 html, body {
