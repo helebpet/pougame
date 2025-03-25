@@ -338,7 +338,7 @@
        }
        /* Game container width */
        .game-container {
-           width: 90vw;
+           width: 80vw;
        }
 
        /* Lamp specific adjustments */
@@ -351,14 +351,14 @@
        }
 
 
-    }
+       
     .nav-container a img {
         width: 15vw;
     }
     
     /* Game Container: Adjust width */
     .game-container {
-        width: 90vw;
+        width: 80vw;
     }
     
     /* Individual Game: Scale down if needed */
@@ -366,8 +366,6 @@
         min-width: 250px;
     }
 
-
-   }
    
-
+}
    
