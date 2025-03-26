@@ -133,11 +133,22 @@
        margin-bottom: 50px;
        padding: 0px;
    }
-   
-   .pou-grow {
-       transform: scale(1.5);
-       transition: transform 0.3s ease;
-   }
+
+   .pou:hover {
+    content: url('../img/pou40_hower.png');
+}
+
+.pougames {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+.pougames:hover {
+    content: url('../img/pougames_hower.png');
+}
+
    
    /* Mini Pou Variants */
    .minipou,
@@ -351,6 +362,12 @@
         padding: 0px;
     }
     
+    .stop {
+        display: block !important;
+        background: red !important;
+    }
+    
+
     .game-container {
         position: absolute;
     top: 58%;
@@ -442,3 +459,14 @@ html, body {
 }
 
    }
+
+   @media (min-width: 1700px) { /* Targets larger screens like Macs */
+    .lamp {
+        position: absolute;
+        bottom: -6%;
+        right: -5%;
+    }
+        
+}
+
+
