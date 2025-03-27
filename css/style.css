@@ -301,7 +301,7 @@ img {
 }
 
 .stop {
-    cursor: url('../img/stopcursor.png'), auto;
+    cursor: url('../img/stopcursor.png') 16 16, auto;
 }
 
 .pou:hover {
