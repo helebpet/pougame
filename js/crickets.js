@@ -1,3 +1,7 @@
+/* 
+    Sourced from ChatGPT 
+*/
+
 document.addEventListener("DOMContentLoaded", () => {
   const sound = document.getElementById("backgroundSound");
 
