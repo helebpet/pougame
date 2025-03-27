@@ -82,7 +82,7 @@ img {
 
 
 /* ==========================================================================
-   4. Navigation & Common UI Elements
+   4. Navigation 
    ========================================================================== */
 .nav-container {
     display: flex;
@@ -272,7 +272,7 @@ img {
 #tomato { top: 15%; left: 65%; }
 #grapes { top: 18%; left: 85%; }
 
-/* Basket & Other Items */
+/* Tic Tac Poe Items */
 #b1, #b2, #b3, #b4, #b5,
 #r1, #r2, #r3, #r4, #r5 {
     position: absolute;
@@ -291,18 +291,6 @@ img {
 #r4 { top: 65%; left: 10%; }
 #r5 { top: 62%; left: 30%; }
 
-/* Pou & Lamp Container */
-.pou-lamp-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /* Ensure images scale well */
 .miniminipou,
@@ -390,7 +378,6 @@ img {
 
     .stop {
         display: block !important;
-        background: red !important;
     }
 
     .game-container {
