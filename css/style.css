@@ -481,34 +481,35 @@ html, body {
         
 }
 
+.stop {
+    cursor: url('../img/stopcursor.png'), auto;
+}
+
+
+.pou:hover {
+    background-image: url('../img/pou40_hower.png'); /* Change to background image */
+}
+
+.pougames:hover {
+    background-image: url('../img/pougames_hower.png'); /* Change to background image */
+}
+
 .hoverElement {
     position: absolute;
-    bottom: 50px; /* Adjusted to be higher */
+    bottom: 50px;
     left: 50%;
-    transform: translateX(-50%); /* Horizontally center the element */
+    transform: translateX(-50%);
     cursor: pointer;
     text-align: center;
-    z-index: 10; /* Ensure it's not overlapped by other elements */
+    z-index: 10;
 }
+
 
 /* Image hover effect */
 .hoverElement:hover .minipousinging {
     transform: scale(1.1); /* Slightly enlarge the image */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;    
     content: url('../img/sing.gif');
 }
 
-/* ==========================================================================
-    3. Ensure other pou elements are similarly positioned
-   ========================================================================== */
-.pou,
-.pougames {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 50px;
-    padding: 0;
-}
 
-.pougames:hover {
-    content: url('../img/pougames_hower.png');
-}
