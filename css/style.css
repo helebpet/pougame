@@ -486,20 +486,16 @@ html, body {
     bottom: 50px; /* Adjusted to be higher */
     left: 50%;
     transform: translateX(-50%); /* Horizontally center the element */
-    
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease;
     z-index: 10; /* Ensure it's not overlapped by other elements */
 }
-
 
 /* Image hover effect */
 .hoverElement:hover .minipousinging {
     transform: scale(1.1); /* Slightly enlarge the image */
     transition: transform 0.3s ease;
     content: url('../img/sing.gif');
-    z-index: 11;
 }
 
 /* ==========================================================================

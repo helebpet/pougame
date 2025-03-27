@@ -2,20 +2,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const hoverElement = document.querySelector(".hoverElement");
     const audio = document.getElementById("backgroundSound");
 
-    // Ensure the audio element is paused at the beginning
+    // Pause and reset audio on load
     audio.pause();
     audio.currentTime = 0;
 
+    // Play the audio when hovering
     hoverElement.addEventListener("mouseenter", function () {
-        // Play the audio only if it is paused
+        // Only play the audio if it’s paused
         if (audio.paused) {
-            audio.play().catch(err => console.log("Playback error:", err));
+            audio.play().catch(err => {
+                console.log("Playback error:", err);
+            });
         }
     });
 
+    // Pause and reset audio when mouse leaves
     hoverElement.addEventListener("mouseleave", function () {
-        // Pause the audio and reset to the beginning when mouse leaves
         audio.pause();
-        audio.currentTime = 0;
+        audio.currentTime = 0; // Reset to the beginning
     });
 });
