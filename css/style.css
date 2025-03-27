@@ -73,7 +73,7 @@
    }
    
    .food_drop {
-       background: url('../img/picnic.png') no-repeat center center fixed;
+       background: url('../img/picnicw.png') no-repeat center center fixed;
        background-size: cover;
    }
    
@@ -166,7 +166,8 @@
        bottom: 0;
        margin-bottom: 50px;
        padding: 0px;
-       z-index: 10; /* Ensures it's not overlapped by another element */
+       z-index: 10
+       ; /* Ensures it's not overlapped by another element */
     
    }
    
@@ -480,4 +481,38 @@ html, body {
         
 }
 
+.hoverElement {
+    position: absolute;
+    bottom: 50px; /* Adjusted to be higher */
+    left: 50%;
+    transform: translateX(-50%); /* Horizontally center the element */
+    
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Ensure it's not overlapped by other elements */
+}
 
+
+/* Image hover effect */
+.hoverElement:hover .minipousinging {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    transition: transform 0.3s ease;
+    content: url('../img/sing.gif');
+    z-index: 11;
+}
+
+/* ==========================================================================
+    3. Ensure other pou elements are similarly positioned
+   ========================================================================== */
+.pou,
+.pougames {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.pougames:hover {
+    content: url('../img/pougames_hower.png');
+}

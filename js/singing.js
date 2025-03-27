@@ -1,24 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const minipou = document.querySelector(".minipou");
+    const hoverElement = document.querySelector(".hoverElement");
     const audio = document.getElementById("backgroundSound");
 
-    // Ensure the user clicks once before enabling hover play
-    document.body.addEventListener("click", () => {
-        audio.play().then(() => {
-            audio.pause(); // Pause so it only plays on hover
-        }).catch(err => console.log("Autoplay blocked: ", err));
-    }, { once: true });
+    // Ensure the audio element is paused at the beginning
+    audio.pause();
+    audio.currentTime = 0;
 
-    minipou.addEventListener("mouseenter", () => {
-        console.log("Mouse entered mini Pou");
+    hoverElement.addEventListener("mouseenter", function () {
+        // Play the audio only if it is paused
         if (audio.paused) {
-            audio.play().catch(err => console.log("Playback error: ", err));
+            audio.play().catch(err => console.log("Playback error:", err));
         }
     });
 
-    minipou.addEventListener("mouseleave", () => {
-        console.log("Mouse left mini Pou");
+    hoverElement.addEventListener("mouseleave", function () {
+        // Pause the audio and reset to the beginning when mouse leaves
         audio.pause();
-        audio.currentTime = 0; // Reset playback position
+        audio.currentTime = 0;
     });
 });
