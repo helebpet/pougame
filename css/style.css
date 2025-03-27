@@ -1,149 +1,131 @@
 /* ==========================================================================
-   1. Font Import
+   1. Global Styles & Layout
    ========================================================================== */
-   @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-   html, body {
+html, body {
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
-   /* ==========================================================================
-      2. Global Styles & Layout
-      ========================================================================== */
-   body {
-       background-color: black;
-       height: 100%;
-       overflow: hidden;
-       font-family: 'Comic Neue', sans-serif;
-       color: white;
-       padding: 10%;
-       border: #ff838300 solid 10px;
-       display: flex;
-       justify-content: center;
-       align-items: flex-end;
-       height: 100vh;
-   }
-   
-   h1 {
-       font-size: 90px;
-       color: white;
-       text-align: center;
-       font-family: 'Comic Neue', sans-serif;
-       font-weight: 900;
-       -webkit-text-stroke: 3px black;
-   }
-   
-   img {
-       padding: 20px;
-   }
-   
-   .hidden {
-       visibility: hidden;
-   }
-   
-   
-   /* ==========================================================================
-      3. Backgrounds for Different Pages/Sections
-      ========================================================================== */
-   .index {
-       background: url('../img/blink.gif') no-repeat center center fixed;
-       background-size: cover;
-   }
-   
-   .age_6 {
-       background-color: #FF8383;
-   }
-   
-   .age_20 {
-       background: url('../img/g.gif') no-repeat center center fixed;
-       background-size: cover;
-   }
-   
-   .age_40 {
-       background: url('../img/wall1.png') no-repeat center center fixed;
-       background-size: cover;
-   }
-   
-   .game_option,
-   .mini_games {
-       background: url('../img/screen.gif') no-repeat center center fixed;
-       background-size: cover;
-   }
-   
-   .food_drop {
-       background: url('../img/picnicw.png') no-repeat center center fixed;
-       background-size: cover;
-   }
-   
-   .tic_tac_pou {
-       background: url('../img/grid.png') no-repeat center center fixed;
-       background-size: cover;
-   }
-   
-   .skyfall {
-       background: url('../img/skyfall.gif') no-repeat center center fixed;
-       background-size: cover;
-   }
+body {
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    padding: 10%;
+    border: #ff838300 solid 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
 
-   #skyfall_pou{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        cursor: grab;
-       }
+h1 {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    -webkit-text-stroke: 3px black;
+}
+
+img {
+    padding: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+}
 
 
-    
-   
-   
-   /* ==========================================================================
-      4. Navigation & Common UI Elements
-      ========================================================================== */
-   .nav-container {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100%;
-   }
-   
-   .left-arrow:hover {
-       content: url('../img/lefthower.png');
-   }
-   
-   .right-arrow:hover {
-       content: url('../img/righthower.png');
-   }
-   
-   
-   /* ==========================================================================
-      5. Specific Elements: Lamp, Pou, Games & Mini-Elements
-      ========================================================================== */
-   /* Lamp */
-   .lamp {
-       position: absolute;
-       bottom: -10%;
-       right: -5%;
-   }
-   
-   .lamp:hover {
-       content: url('../img/lamphover.png');
-   }
-   
-   /* Pou & Related Elements */
-   .pou {
-       position: absolute;
-       bottom: 0;
-       margin-bottom: 50px;
-       padding: 0px;
-   }
+/* ==========================================================================
+   3. Backgrounds for Different Pages/Sections
+   ========================================================================== */
+.index {
+    background: url('../img/blink.gif') no-repeat center center fixed;
+    background-size: cover;
+}
 
-   .pou:hover {
+.age_6 {
+    background-color: #FF8383;
+}
+
+.age_20 {
+    background: url('../img/g.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.age_40 {
+    background: url('../img/wall1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.game_option,
+.mini_games {
+    background: url('../img/screen.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.food_drop {
+    background: url('../img/picnicw.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.tic_tac_pou {
+    background: url('../img/grid.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.skyfall {
+    background: url('../img/skyfall.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* ==========================================================================
+   4. Navigation & Common UI Elements
+   ========================================================================== */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.left-arrow:hover {
+    content: url('../img/lefthower.png');
+}
+
+.right-arrow:hover {
+    content: url('../img/righthower.png');
+}
+
+
+/* ==========================================================================
+   5. Specific Elements: Lamp, Pou, Games & Mini-Elements
+   ========================================================================== */
+/* Lamp */
+.lamp {
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+}
+
+.lamp:hover {
+    content: url('../img/lamphover.png');
+}
+
+/* Pou & Related Elements */
+.pou {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+.pou:hover {
     content: url('../img/pou40_hower.png');
 }
 
@@ -158,340 +140,187 @@
     content: url('../img/pougames_hower.png');
 }
 
-   
-   /* Mini Pou Variants */
-   .minipou,
-   .miniminipou {
-       position: absolute;
-       bottom: 0;
-       margin-bottom: 50px;
-       padding: 0px;
-       z-index: 10
-       ; /* Ensures it's not overlapped by another element */
-    
-   }
-   
-   .minipou:hover {
-       content: url('../img/sing.gif');
-   }
-   
-   .miniminipou:hover {
-       content: url('../img/hi.png');
-   }
-   
-   /* Games */
-   .games {
-       position: fixed;
-       bottom: 0;
-       right: 0;
-       margin: 25px;
-   }
-   
-   /* Game Container & Items */
-   .game-container {
-       position: absolute;
-       top: 55%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-wrap: wrap;
-       gap: 30px; /* Increased gap between game blocks */
-       width: 90vw; /* Increased width */
-       max-width: 1000px; /* Increased max width */
-       height: auto;
-       min-height: 500px; /* Ensures a larger container */
-       padding: 30px; /* More padding for a bigger look */
-       text-align: center;
-   }
-   
-   .game {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       flex: 1;
-       min-width: 300px; /* Increased minimum width */
-   }
-   
-   .game a {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       gap: 15px; /* More spacing between images */
-   }
-   
-   .game img {
-       display: block;
-       max-width: 100%;
-   }
-   
-   /* Game-specific positioning */
-   .g1 {
-       position: absolute;
-       width: 200px;
-       height: auto;
-       top: 5%;
-       left: 75%;
-   }
-   
-   .g2 {
-       position: absolute;
-       width: 200px;
-       height: auto;
-       top: 20%;
-       left: 15%;
-   }
-   
-   .g3 {
-       position: absolute;
-       width: 200px;
-       height: auto;
-       top: 40%;
-       left: 50%;
-   }
-   
-   .g4 {
-       position: absolute;
-       width: 200px;
-       height: auto;
-       top: 60%;
-       left: 85%;
-   }
-   
-   .g5 {
-       position: absolute;
-       width: 200px;
-       height: auto;
-       top: 30%;
-       left: 5%;
-   }
-   
-   /* Draggable Food Items */
-   #brocoli,
-   #cupcake,
-   #roll,
-   #tomato,
-   #grapes {
-       position: absolute;
-       width: 10%;
-       height: auto;
-   }
-   
-   #brocoli { top: 20%; left: 5%; }
-   #cupcake { top: 10%; left: 25%; }
-   #roll { top: 30%; left: 45%; }
-   #tomato { top: 15%; left: 65%; }
-   #grapes { top: 18%; left: 85%; }
-   
-   /* Basket & Other Items */
-   #b1, #b2, #b3, #b4, #b5,
-   #r1, #r2, #r3, #r4, #r5 {
-       position: absolute;
-       width: 200px;
-       height: auto;
-   }
-   
-   #b1 { top: 10%; left: 5%; }
-   #b2 { top: 25%; left: 40%; }
-   #b3 { top: 50%; left: 60%; }
-   #b4 { top: 70%; left: 20%; }
-   #b5 { top: 50%; left: 50%; }
-   #r1 { top: 15%; left: 60%; }
-   #r2 { top: 30%; left: 20%; }
-   #r3 { top: 55%; left: 70%; }
-   #r4 { top: 65%; left: 10%; }
-   #r5 { top: 62%; left: 30%; }
-   
-   /* Pou & Lamp Container */
-   .pou-lamp-container {
-       display: flex;
-       align-items: center; /* Align Pou and Lamp vertically */
-       justify-content: center; /* Center both elements horizontally */
-       gap: 20px; /* Space between Pou and Lamp */
-       width: 100%; /* Full width to ensure flexibility */
-       position: absolute;
-       bottom: 1%; /* Adjust to position them correctly */
-       left: 50%;
-       transform: translate(-50%, -50%);
-   }
-   
-   /* Ensure images scale well */
-   .miniminipou,
-   .lamp {
-       max-width: 100%;
-       height: auto;
-   }
-   
-   
-   /* ==========================================================================
-      6. Responsive Adjustments
-      ========================================================================== */
-   @media (max-width: 768px) {
-       /* Adjust size for lamp and miniminipou */
-       .miniminipou, .lamp {
-           width: 50vw;
-       }
-       .minipou, .lamp {
-        width: 60vw;
-        }
+/* Mini Pou Variants */
+.minipou,
+.miniminipou {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding: 0px;
+    z-index: 10;
+}
 
-        .pou, .lamp {
-            width: 100vw;
-        }
+.minipou:hover {
+    content: url('../img/sing.gif');
+}
 
+.miniminipou:hover {
+    content: url('../img/hi.png');
+}
 
-       /* Navigation adjustments */
-       .nav-container {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           gap: 10px; /* Adjust spacing */
-           padding: 10px;
-           position: absolute;
-           top: 10%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           width: fit-content;
-           gap: 5px;
-           padding: 5px;
-           width: 90vw;
-           max-width: 100%;
-       }
-       .stop, .right-arrow, .left-arrow {
-           width: 15vw;
-       }
-       .nav-container img[alt*="age"] {
-           height: 50px; /* Reduce the age image size */
-
-       }
-       /* Game container width */
-  
-       .game-container img {
-        width: 150px; /* Reduce width */
-        height: auto; /* Maintain aspect ratio */
-        padding: 0px;
-    }
-    
-    .stop {
-        display: block !important;
-        background: red !important;
-    }
-    
-
-    .game-container {
-        position: absolute;
-    top: 58%;
+#skyfall_pou {
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    }
-    
-
-    .game-container img:nth-child(2) {
-        width: auto; 
-        height: 30px; /* Reduce height of second image */
-        padding: 0px;
-    }
-
-    .mini_games_text {
-        height: 32px !important;
-        width: auto !important;
-    }
-
-    
-       /* Lamp specific adjustments */
-       .lamp {
-           width: 50%;
-           height: auto;
-           position: absolute;
-           bottom: -2.5%;
-           right: -5%;
-       }
-
-    /* Individual Game: Scale down if needed */
-    .games {
-        width: 30%;
-        position: absolute;
-        bottom: 0%;
-        right: -5%;
-        z-index: 5;
-    }
-
-    /* Make Pou smaller only on the food_drop page */
-.food_drop .pou {
-    width: 60vw; /* Adjust as needed */
-    height: auto;
+    cursor: grab;
 }
 
-.food_drop {
-    background: url('../img/picnic1.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed; /* Prevents scrolling */
+/* Games */
+.games {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 25px;
 }
 
-.tic_tac_pou{
-    background: url('../img/grid2.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed; /* Prevents scrolling */
-}
-
-
-
-/* Reduce the size of food items */
-.food_drop #brocoli img,
-.food_drop #cupcake img,
-.food_drop #roll img,
-.food_drop #tomato img,
-.food_drop #grapes img {
-    width: 60px !important; /* Adjust size as needed */
-    height: auto;
-}
-
-#grapes { 
+/* Game Container & Items */
+.game-container {
     position: absolute;
-    top: 49%; 
-    left: 50%; 
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 90vw;
+    max-width: 1000px;
+    height: auto;
+    min-height: 500px;
+    padding: 30px;
+    text-align: center;
 }
 
-/* Adjusting size of elemets fto tic tac pou */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+.game a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.game img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Game-specific positioning */
+.g1 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 5%;
+    left: 75%;
+}
+
+.g2 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 20%;
+    left: 15%;
+}
+
+.g3 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+}
+
+.g4 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 60%;
+    left: 85%;
+}
+
+.g5 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 30%;
+    left: 5%;
+}
+
+/* Draggable Food Items */
+#brocoli,
+#cupcake,
+#roll,
+#tomato,
+#grapes {
+    position: absolute;
+    width: 10%;
+    height: auto;
+}
+
+#brocoli { top: 20%; left: 5%; }
+#cupcake { top: 10%; left: 25%; }
+#roll { top: 30%; left: 45%; }
+#tomato { top: 15%; left: 65%; }
+#grapes { top: 18%; left: 85%; }
+
+/* Basket & Other Items */
 #b1, #b2, #b3, #b4, #b5,
 #r1, #r2, #r3, #r4, #r5 {
     position: absolute;
-    width: 40px !important;
-    height: auto !important;
+    width: 200px;
+    height: auto;
 }
 
-html, body {
-    overflow: hidden;
-    height: 100%;
+#b1 { top: 10%; left: 5%; }
+#b2 { top: 25%; left: 40%; }
+#b3 { top: 50%; left: 60%; }
+#b4 { top: 70%; left: 20%; }
+#b5 { top: 50%; left: 50%; }
+#r1 { top: 15%; left: 60%; }
+#r2 { top: 30%; left: 20%; }
+#r3 { top: 55%; left: 70%; }
+#r4 { top: 65%; left: 10%; }
+#r5 { top: 62%; left: 30%; }
+
+/* Pou & Lamp Container */
+.pou-lamp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-   }
-
-   @media (min-width: 1700px) { /* Targets larger screens like Macs */
-    .lamp {
-        position: absolute;
-        bottom: -6%;
-        right: -5%;
-    }
-        
+/* Ensure images scale well */
+.miniminipou,
+.lamp {
+    max-width: 100%;
+    height: auto;
 }
 
 .stop {
     cursor: url('../img/stopcursor.png'), auto;
 }
 
-
 .pou:hover {
-    background-image: url('../img/pou40_hower.png'); /* Change to background image */
+    background-image: url('../img/pou40_hower.png');
 }
 
 .pougames:hover {
-    background-image: url('../img/pougames_hower.png'); /* Change to background image */
+    background-image: url('../img/pougames_hower.png');
 }
 
 .hoverElement {
@@ -504,12 +333,159 @@ html, body {
     z-index: 10;
 }
 
-
 /* Image hover effect */
 .hoverElement:hover .minipousinging {
-    transform: scale(1.1); /* Slightly enlarge the image */
-    transition: transform 0.3s ease;    
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
     content: url('../img/sing.gif');
 }
 
+
+/* ==========================================================================
+   6. Responsive Adjustments
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Adjust size for lamp and miniminipou */
+    .miniminipou, .lamp {
+        width: 50vw;
+    }
+    .minipou, .lamp {
+        width: 60vw;
+    }
+
+    .pou, .lamp {
+        width: 100vw;
+    }
+
+    /* Navigation adjustments */
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        gap: 5px;
+        padding: 5px;
+        width: 90vw;
+        max-width: 100%;
+    }
+    .stop, .right-arrow, .left-arrow {
+        width: 15vw;
+    }
+    .nav-container img[alt*="age"] {
+        height: 50px;
+    }
+    /* Game container width */
+
+    .game-container img {
+        width: 150px;
+        height: auto;
+        padding: 0px;
+    }
+
+    .stop {
+        display: block !important;
+        background: red !important;
+    }
+
+    .game-container {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .game-container img:nth-child(2) {
+        width: auto;
+        height: 30px;
+        padding: 0px;
+    }
+
+    .mini_games_text {
+        height: 32px !important;
+        width: auto !important;
+    }
+
+    /* Lamp specific adjustments */
+    .lamp {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        bottom: -2.5%;
+        right: -5%;
+    }
+
+    /* Individual Game: Scale down if needed */
+    .games {
+        width: 30%;
+        position: absolute;
+        bottom: 0%;
+        right: -5%;
+        z-index: 5;
+    }
+
+    /* Make Pou smaller only on the food_drop page */
+    .food_drop .pou {
+        width: 60vw;
+        height: auto;
+    }
+
+    .food_drop {
+        background: url('../img/picnic1.png') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .tic_tac_pou {
+        background: url('../img/grid2.png') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* Reduce the size of food items */
+    .food_drop #brocoli img,
+    .food_drop #cupcake img,
+    .food_drop #roll img,
+    .food_drop #tomato img,
+    .food_drop #grapes img {
+        width: 60px !important;
+        height: auto;
+    }
+
+    #grapes { 
+        position: absolute;
+        top: 49%;
+        left: 50%;
+    }
+
+    /* Adjusting size of elements for tic tac pou */
+    #b1, #b2, #b3, #b4, #b5,
+    #r1, #r2, #r3, #r4, #r5 {
+        position: absolute;
+        width: 40px !important;
+        height: auto !important;
+    }
+
+    html, body {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1700px) {
+    /* Targets larger screens like Macs */
+    .lamp {
+        position: absolute;
+        bottom: -6%;
+        right: -5%;
+    }
+}
 
