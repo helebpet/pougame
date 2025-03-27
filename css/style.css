@@ -329,6 +329,10 @@ img {
     content: url('../img/sing.gif');
 }
 
+.about {
+    cursor: url('../img/spiral.png') 16 16, auto;
+}
+
 
 /* ==========================================================================
    6. Responsive Adjustments
@@ -377,9 +381,6 @@ img {
         padding: 0px;
     }
 
-    .stop {
-        display: block !important;
-    }
 
     .game-container {
         position: absolute;
