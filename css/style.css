@@ -473,7 +473,7 @@ img {
     .lamp {
         position: absolute;
         bottom: -6%;
-        right: -2%;
+        right: 0%;
     }
 }
 
