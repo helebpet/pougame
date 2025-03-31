@@ -197,6 +197,18 @@ img {
     margin: 25px;
 }
 
+.game {
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game a img:first-of-type {
+    border-radius: 20px; /* sourced from ChatGPT */
+}
+
 /* Game Container & Items */
 .game-container {
     position: absolute;
